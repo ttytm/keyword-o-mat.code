@@ -27,7 +27,7 @@
   <summary>Extension compatible - Auto Rename Tag <em>- click to unfold</em></summary>
 <img src="images/kom__art.gif" alt="Example Auto Rename Tag Extension" width="480"/> 
 </details>
-  
+
 ## How To Use
 
 |                | **Default Keymaps** | **Commands**           |
@@ -37,11 +37,9 @@
 
 <sub>The default keybindings are inspired by VIM's _add_ `Ctrl-a` and _subtract_ `Ctrl-x`. Of course , you can remap them to your preference.</sub>
 
----
-
 ## Keyword List
 
-| _Rotate symbols and words that are in one row_                                  |
+| _Rotate symbols and words that are in one row_                                     |
 | ---------------------------------------------------------------------------------- |
 | `==` , `!=`                                                                        |
 | `_` , `-`                                                                          |
