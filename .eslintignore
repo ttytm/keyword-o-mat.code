@@ -1,0 +1,7 @@
+.vscode/
+.stash/
+images/
+out/
+plugins/
+test/
+gulpfile.js
