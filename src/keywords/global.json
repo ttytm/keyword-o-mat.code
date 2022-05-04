@@ -11,7 +11,7 @@
 	["on", "off"],
 	["running", "stopped"],
 	["first", "last"],
-	["if", "else", "else if"],
+	["if", "else"],
 	["const", "let"],
 	["private", "protected", "public"],
 	["push", "pull"],

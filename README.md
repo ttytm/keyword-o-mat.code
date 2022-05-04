@@ -48,7 +48,7 @@
 | `&&` , `\|\|`                                                                      |
 | `and` , `or`                                                                       |
 | `true` , `false`                                                                   |
-| `if` , `else` , `else if`                                                          |
+| `if` , `else`                                                                      |
 | `YES` , `NO`                                                                       |
 | `yes` , `no`                                                                       |
 | `on` , `off`                                                                       |
@@ -109,6 +109,8 @@ If you feel like it, please star or rate the repo to let me know that you use th
 Also, bug reports, example gifs, feature- and pull requests are welcome.
 
 ## Release Notes
+
+<sub>`*.*.n` version changes are tracked via commit history until `*.n.*` version relaeases</sub>
 
 ### 0.1.0
 
