@@ -40,7 +40,7 @@
 	["small", "large"],
 	["even", "odd"],
 	["inside", "outside"],
-	["primary", "secondary", "tertiary", "quaternary", "quantary"],
+	["primary", "secondary", "tertiary", "quaternary", "quinary"],
 
 	["include", "require"],
 	["Time", "Date"],

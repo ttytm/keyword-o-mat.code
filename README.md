@@ -93,7 +93,7 @@
 | `get` , `post` , `put` , `patch`                                                   |
 |                                                                                    |
 | `one` , `two` , `three` , `four` , `five`                                          |
-| `primary` , `secondary` , `tertiary` , `quaternary` , `quantary`                   |
+| `primary` , `secondary` , `tertiary` , `quaternary` , `quinary`                    |
 | `Monday` , `Tuesday` , `Wednesday` , `Thursday` , `Friday` , `Saturday` , `Sunday` |
 
 <sub>\*For single words and properties to be cycled, its sufficient when the cursor is placed above them.<br>
