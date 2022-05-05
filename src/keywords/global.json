@@ -40,7 +40,6 @@
 	["small", "large"],
 	["even", "odd"],
 	["inside", "outside"],
-	["primary", "secondary", "tertiary", "quaternary", "quinary"],
 
 	["include", "require"],
 	["Time", "Date"],
@@ -52,6 +51,8 @@
 	["get", "post", "put", "patch"],
 
 	["one", "two", "three", "four", "five"],
+	["first", "second", "thrid", "forth", "fifth"],
+	["primary", "secondary", "tertiary", "quaternary", "quinary"],
 	[
 		"Monday",
 		"Tuesday",
