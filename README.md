@@ -53,7 +53,6 @@
 | `yes` , `no`                                                                       |
 | `on` , `off`                                                                       |
 | `running` , `stopped`                                                              |
-| `first` , `last`                                                                   |
 | `const` , `let`                                                                    |
 | `private` , `protected` , `public`                                                 |
 | `push` , `pull`                                                                    |
@@ -93,7 +92,7 @@
 | `get` , `post` , `put` , `patch`                                                   |
 |                                                                                    |
 | `one` , `two` , `three` , `four` , `five`                                          |
-| `first`, `second`, `thrid`, `forth`, `fifth`,                                      |
+| `first`, `second`, `thrid`, `forth`, `fifth`, `last`                               |
 | `primary` , `secondary` , `tertiary` , `quaternary` , `quinary`                    |
 | `Monday` , `Tuesday` , `Wednesday` , `Thursday` , `Friday` , `Saturday` , `Sunday` |
 
