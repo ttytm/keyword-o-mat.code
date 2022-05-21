@@ -1,6 +1,7 @@
 .vscode/
 .stash/
 images/
+assets/
 out/
 plugins/
 test/

@@ -101,7 +101,7 @@ Symbols and linked words like `&&` or element-`one` currently require to be sele
 
 ## Known Issues
 
-Currently, missing additional functionalities, like file type specific keyword overrides and setting custom keyword maps inside a user's settings.json. As the present state fulfills the requirements for the times I'm using VSCodium and the extension has a small user base I didn't invest too much time developing those features yet.
+Currently, missing additional functionalities. E.g, file type specific keyword overrides or defining custom keyword maps inside a user's settings.json. As the current state fulfills the requirements for the times I'm using VSCodium and the extension having a small user base I didn't came to invest the time developing those features yet.
 
 If you like to use the extension, leaving a star on the repo or a rating in the marketplace lets me know that you use the extension and that you would like to see more features. Also, bug reports, feature- and pull requests are welcome.
 
