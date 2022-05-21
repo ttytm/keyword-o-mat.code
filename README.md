@@ -11,13 +11,15 @@
 
 <details open>
   <summary>Cycle variables, booleans and commonly used keywords</summary>
-  <img src="assets/kom__bool.gif" alt="Example CSS" width="480"/> 
+  <img src="assets/kom__bool.gif" alt="Example CSS" width="480"/>
+
   <img src="assets/kom__css.gif" alt="Example CSS" width="480"/> 
 </details>
 
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
-  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" width="480"/>     
+  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" width="480"/>
+
   <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" width="480"/>     
 </details>
 
