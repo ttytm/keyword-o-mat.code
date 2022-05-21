@@ -1,7 +1,7 @@
 # Keyword-O-Mat
 
 <div align="center">
-  <img src="images/keyword-o-mat__logo.png" />
+  <img src="assets/keyword-o-mat__logo.png" />
 
 > _"Amp up your workflows. Quickly rotate related keywords that are commonly used in a variety of popular languages."_
 
@@ -10,22 +10,20 @@
 ## Examples
 
 <details open>
-  <summary>CSS - Properties, Values, Classes</summary>
-<img src="images/kom__css.gif" alt="Example CSS" width="480"/> 
-  </details>
-
-<details>
-<summary>TS, C++, PHP, Java - Access Modifiers <em>- click to unfold</em></summary>
-<img src="images/kom__ts.gif" alt="Example Access Modifiers" width="480"/>  
+  <summary>Cycle variables, booleans and commonly used keywords</summary>
+  <img src="assets/kom__bool.gif" alt="Example CSS" width="480"/> 
+  <img src="assets/kom__css.gif" alt="Example CSS" width="480"/> 
 </details>
 
-<details open>
-  <summary>Multi cursor selection compatible</summary>
-<img src="images/kom__mc.gif" alt="Example Multi cursor selection" width="480"/>     
-  </details>
-  <details>
+<details>
+  <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
+  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" width="480"/>     
+  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" width="480"/>     
+</details>
+
+<details>
   <summary>Extension compatible - Auto Rename Tag <em>- click to unfold</em></summary>
-<img src="images/kom__art.gif" alt="Example Auto Rename Tag Extension" width="480"/> 
+  <img src="assets/kom__art.gif" alt="Example Auto Rename Tag Extension" width="480"/> 
 </details>
 
 ## How To Use
@@ -95,22 +93,21 @@
 | `first`, `second`, `thrid`, `forth`, `fifth`, `last`                               |
 | `primary` , `secondary` , `tertiary` , `quaternary` , `quinary`                    |
 | `Monday` , `Tuesday` , `Wednesday` , `Thursday` , `Friday` , `Saturday` , `Sunday` |
+| `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
+| `NOW` , `LATER`                                                                    |
 
 <sub>\*For single words and properties to be cycled, its sufficient when the cursor is placed above them.<br>
 Symbols and linked words like `&&` or element-`one` currently require to be selected. </sub>
 
 ## Known Issues
 
-This is an early and extensible version of this extension. It's code offers a good basis to add functionalities.
-Although its current features are simple, this state fulfills the requirements in the times I'm using VSCodium. Further development depends on whether the extension will have a user base with a need for more functionalities.
-Features that I had in mind when working on this extension were, for example, file type specific keyword overrides and to set custom keyword maps inside a user's settings.json.
+Currently, missing additional functionalities, like file type specific keyword overrides and setting custom keyword maps inside a user's settings.json. As the present state fulfills the requirements for the times I'm using VSCodium and the extension has a small user base I didn't invest too much time developing those features yet.
 
-If you feel like it, please star or rate the repo to let me know that you use the extension and that you would like to see more features.
-Also, bug reports, example gifs, feature- and pull requests are welcome.
+If you like to use the extension, leaving a star on the repo or a rating in the marketplace lets me know that you use the extension and that you would like to see more features. Also, bug reports, feature- and pull requests are welcome.
 
 ## Release Notes
 
-<sub>`*.*.n` version changes are tracked via commit history until `*.n.*` version relaeases</sub>
+<sub>`*.*.n` patches are tracked via commit history</sub>
 
 ### 0.1.0
 

@@ -52,13 +52,7 @@
 	["one", "two", "three", "four", "five"],
 	["first", "second", "thrid", "forth", "fifth", "last"],
 	["primary", "secondary", "tertiary", "quaternary", "quinary"],
-	[
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thursday",
-		"Friday",
-		"Saturday",
-		"Sunday"
-	]
+	["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+	["TODO", "DOING", "DONE", "CANCELED"],
+	["NOW", "LATER"]
 ]

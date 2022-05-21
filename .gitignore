@@ -1,6 +1,7 @@
 out
 dist
 .stash
+.history
 node_modules
 .vscode-test/
 *.vsix
