@@ -29,6 +29,21 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+			"title": "Keyword-O-Mat",
+			"properties": {
+				"keyword-o-mat.keywords": {
+					"type": "object",
+					"description": "Cycle groups formatted as arrays of strings.",
+					"default": [
+						[
+							"above",
+							"below"
+						]
+					]
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "keyword-o-mat.cycleForward",
