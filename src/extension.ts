@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import { keywords, keywordsReversed, Keyword } from "./keyword-o-mat";
 
-const changeKeyword = (keywords: Keyword<Keyword<string>>) => {
+const cycleKeyword = (keywords: Keyword<Keyword<string>>) => {
 	const activeTextEditor = vscode.window.activeTextEditor;
 	if (!activeTextEditor) return;
 
@@ -51,20 +51,12 @@ const sortSelections = (document: vscode.TextDocument, selections: vscode.Select
 	});
 };
 
-const cycleFwd = () => { changeKeyword(keywords); };
-const cycleBwd = () => { changeKeyword(keywordsReversed); };
+const cycleFwd = () => { cycleKeyword(keywords); };
+const cycleBwd = () => { cycleKeyword(keywordsReversed); };
 
 export function activate(context: vscode.ExtensionContext) {
-	context.subscriptions.push(
-		vscode.commands.registerCommand("keyword-o-mat.cycleForward", () =>
-			cycleFwd()
-		)
-	);
-	context.subscriptions.push(
-		vscode.commands.registerCommand("keyword-o-mat.cycleBackward", () =>
-			cycleBwd()
-		)
-	);
+	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleForward", () => cycleFwd()));
+	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleBackward", () => cycleBwd()));
 }
 
 export function deactivate() { }
