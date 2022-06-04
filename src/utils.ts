@@ -50,6 +50,5 @@ export const getKeywords = (defaultEnabled: boolean) => {
 		substractors: { ...substractors }
 	};
 
-	console.log('user only', keywords);
 	return keywords;
 };
