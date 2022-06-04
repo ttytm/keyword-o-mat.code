@@ -1,5 +1,11 @@
 import * as vscode from "vscode";
-import { keywords, keywordsReversed, Keyword } from "./keyword-o-mat";
+import { getKeywords } from "./keyword-o-mat";
+import type { Keyword } from "./keyword-o-mat";
+
+const configuration = vscode.workspace.getConfiguration("keyword-o-mat");
+
+const keywords = getKeywords(configuration.get("defaultKeywordsEnabled"), false);
+const keywordsReversed = getKeywords(configuration.get("defaultKeywordsEnabled"), true);
 
 const cycleKeyword = (keywords: Keyword<Keyword<string>>) => {
 	const activeTextEditor = vscode.window.activeTextEditor;

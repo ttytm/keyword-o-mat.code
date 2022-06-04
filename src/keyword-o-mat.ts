@@ -5,7 +5,7 @@ import { join } from "path";
 export type Keyword<T = any> = { [key: string]: T };
 
 const getUserKeywords = (reverse: boolean) => {
-	const results: string[] = vscode.workspace.getConfiguration().get("keyword-o-mat.keywords");
+	const results: string[] = vscode.workspace.getConfiguration("keyword-o-mat").get("customKeywords");
 	if (!results) return;
 
 	const lists: string[][] = JSON.parse(JSON.stringify(results));
@@ -35,10 +35,24 @@ const createKeywordMap = (lists: string[][]) => {
 	return keywords;
 };
 
-export const keywords = {
-	global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")),
-	user: createKeywordMap(getUserKeywords(false)),
+// TODO: use array of keywords instead of two sperate objects
+export const getKeywords = (defaultEnabled: boolean, reverse: boolean) => {
+	let keywords = {};
+
+	if (!reverse) {
+		keywords = { user: createKeywordMap(getUserKeywords(reverse)) };
+		if (!defaultEnabled) return keywords;
+		keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
+		return keywords;
+	}
+
+	keywords = { user: createKeywordMap(getUserKeywords(reverse)) };
+	if (!defaultEnabled) return keywords;
+	keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
+	return keywords;
+
 };
+
 export const keywordsReversed = {
 	global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")),
 	user: createKeywordMap(getUserKeywords(true)),

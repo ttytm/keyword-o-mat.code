@@ -32,13 +32,19 @@
 		"configuration": {
 			"title": "Keyword-O-Mat",
 			"properties": {
-				"keyword-o-mat.keywords": {
+				"keyword-o-mat.defaultKeywordsEnabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable or disable the default keyword list."
+				},
+				"keyword-o-mat.customKeywords": {
 					"type": "object",
-					"description": "Cycle groups formatted as arrays of strings.",
+					"description": "Add cycle groups. A keyword group is formatted as an arrays of strings.",
 					"default": [
 						[
-							"above",
-							"below"
+							"foo",
+							"bar",
+							"baz"
 						]
 					]
 				}
