@@ -39,6 +39,7 @@
 	["small", "large"],
 	["even", "odd"],
 	["inside", "outside"],
+	["above", "below"],
 
 	["include", "require"],
 	["Time", "Date"],

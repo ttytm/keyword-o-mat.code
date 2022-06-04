@@ -3,7 +3,7 @@
 	"displayName": "Keyword-O-Mat",
 	"publisher": "Turiiya",
 	"description": "Easily cycle through commonly used keywords.",
-	"version": "0.1.9",
+	"version": "0.2.0",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.66.0"
@@ -32,13 +32,13 @@
 		"configuration": {
 			"title": "Keyword-O-Mat",
 			"properties": {
-				"keyword-o-mat.defaultKeywordsEnabled": {
+				"keyword-o-mat.defaultKeywords": {
 					"type": "boolean",
 					"default": true,
-					"description": "Enable or disable the default keyword list."
+					"description": "Enable or disable the default keyword list (reload required)."
 				},
 				"keyword-o-mat.customKeywords": {
-					"type": "object",
+					"type": "array",
 					"description": "Add cycle groups. A keyword group is formatted as an arrays of strings.",
 					"default": [
 						[

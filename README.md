@@ -3,7 +3,7 @@
 <div align="center">
   <img src="assets/keyword-o-mat__logo.png" />
 
-> _"Amp up your workflows. Quickly rotate related keywords that are commonly used in a variety of popular languages."_
+> _"Amp up your workflows. Quickly rotate related keywords commonly used in a variety of popular coding languages."_
 
 </div>
 
@@ -38,6 +38,18 @@
 <sub>The default keybindings are inspired by VIM's _add_ `Ctrl-a` and _subtract_ `Ctrl-x`. Of course , you can remap them to your preference.</sub>
 
 ## Keyword List
+
+Simple create custom keyword groups by adding a cycle group to your `settings.json`.<br>
+E.g., having one group added that should cycle between `foo` / `bar` / `baz` it would look like:
+
+```json
+"keyword-o-mat.customKeywords": [
+  ["foo", "bar", "baz"],
+  ["veggies", "fruits", "berries"]
+],
+```
+
+### Default Keywords
 
 | _Rotate symbols and words that are in one row_                                     |
 | ---------------------------------------------------------------------------------- |
@@ -99,8 +111,8 @@
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<sub>\* To cycle through single words, its sufficient when the cursor is placed above them.<br>
-Words that are linked or wrapped like _element-`one`_ or _`"foo"`_ and symbols like _`&&`_ require to be selected. </sub>
+<sub>\* Words that are linked or wrapped like _element-`one`_ or _`"foo"`_ and symbols like _`&&`_ require to be selected.<br>
+When a word is surrounded by spaces it is sufficient when the cursor is placed above it.</sub>
 
 ## Release Notes
 

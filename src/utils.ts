@@ -26,9 +26,9 @@ const getDefaultKeywords = (reverse: boolean, ...pathnames: string[]) => {
 	return lists;
 };
 
-// Create keywordmaps
+// Create keyword maps
 const createKeywordMap = (lists: string[][]) => {
-	const keywords: Keyword<string> = {};
+	const keywords = {};
 
 	lists.forEach((pair) => { pair.forEach((value, index) => (keywords[value] = pair[index + 1] || pair[0])); });
 
@@ -41,6 +41,7 @@ export const getKeywords = (defaultEnabled: boolean, reverse: boolean) => {
 
 	if (!reverse) {
 		keywords = { user: createKeywordMap(getUserKeywords(reverse)) };
+		// TODO: remove need to reload window on setting change
 		if (!defaultEnabled) return keywords;
 		keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
 		return keywords;
@@ -51,9 +52,4 @@ export const getKeywords = (defaultEnabled: boolean, reverse: boolean) => {
 	keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
 	return keywords;
 
-};
-
-export const keywordsReversed = {
-	global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")),
-	user: createKeywordMap(getUserKeywords(true)),
 };
