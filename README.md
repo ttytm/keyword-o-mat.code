@@ -53,10 +53,6 @@ E.g., having one group added that should cycle between `foo` / `bar` / `baz` it 
 
 | _Rotate symbols and words that are in one row_                                     |
 | ---------------------------------------------------------------------------------- |
-| `==` , `!=`                                                                        |
-| `_` , `-`                                                                          |
-| `+` , `-`                                                                          |
-| `-=` , `+=`                                                                        |
 | `&&` , `\|\|`                                                                      |
 | `and` , `or`                                                                       |
 | `true` , `false`                                                                   |
@@ -111,7 +107,7 @@ E.g., having one group added that should cycle between `foo` / `bar` / `baz` it 
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<sub>\* Words that are linked or wrapped like _element-`one`_ or _`"foo"`_ and symbols like _`&&`_ require to be selected.<br>
+<sub>\* Words that are linked or wrapped like _element-`one`_ or _"`foo`"_ and symbols like _`&&`_ require to be selected.<br>
 When a word is surrounded by spaces it is sufficient when the cursor is placed above it.</sub>
 
 ## Release Notes

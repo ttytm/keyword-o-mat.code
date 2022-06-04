@@ -35,21 +35,21 @@ const createKeywordMap = (lists: string[][]) => {
 	return keywords;
 };
 
-// TODO: use array of keywords instead of two sperate objects
-export const getKeywords = (defaultEnabled: boolean, reverse: boolean) => {
-	let keywords = {};
+export const getKeywords = (defaultEnabled: boolean) => {
+	let adders = { user: createKeywordMap(getUserKeywords(false)) };
+	let substractors = { user: createKeywordMap(getUserKeywords(true)) };
 
-	if (!reverse) {
-		keywords = { user: createKeywordMap(getUserKeywords(reverse)) };
-		// TODO: remove need to reload window on setting change
-		if (!defaultEnabled) return keywords;
-		keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
-		return keywords;
+	// TODO: remove the need to reload window on setting change
+	if (defaultEnabled) {
+		Object.assign(adders, { global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")) });
+		Object.assign(substractors, { global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) });
 	}
 
-	keywords = { user: createKeywordMap(getUserKeywords(reverse)) };
-	if (!defaultEnabled) return keywords;
-	keywords = { ...keywords, global: createKeywordMap(getDefaultKeywords(reverse, "./keywords/global.json")) };
-	return keywords;
+	const keywords = {
+		adders: { ...adders },
+		substractors: { ...substractors }
+	};
 
+	console.log('user only', keywords);
+	return keywords;
 };

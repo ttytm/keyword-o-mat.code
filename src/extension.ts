@@ -2,10 +2,7 @@ import * as vscode from "vscode";
 import { getKeywords } from "./utils";
 import type { Keyword } from "./utils";
 
-const configuration = vscode.workspace.getConfiguration("keyword-o-mat");
-
-const keywords = getKeywords(configuration.get("defaultKeywords"), false);
-const keywordsReversed = getKeywords(configuration.get("defaultKeywords"), true);
+const keywords = getKeywords(vscode.workspace.getConfiguration("keyword-o-mat").get("defaultKeywords"));
 
 const cycleKeyword = (keywords: Keyword<Keyword<string>>) => {
 	const activeTextEditor = vscode.window.activeTextEditor;
@@ -57,8 +54,8 @@ const sortSelections = (document: vscode.TextDocument, selections: vscode.Select
 	});
 };
 
-const cycleFwd = () => { cycleKeyword(keywords); };
-const cycleBwd = () => { cycleKeyword(keywordsReversed); };
+const cycleFwd = () => cycleKeyword(keywords.adders);
+const cycleBwd = () => cycleKeyword(keywords.substractors);
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleForward", () => cycleFwd()));
