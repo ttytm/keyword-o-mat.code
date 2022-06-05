@@ -11,24 +11,26 @@
 
 <details open>
   <summary>Cycle variables, booleans and commonly used keywords</summary>
-  <img src="assets/kom__bool.gif" alt="Example CSS" style="width:480px; margin-top:0.25em"/>
+  <img src="assets/kom__bool.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
 
-  <img src="assets/kom__css.gif" alt="Example CSS" style="width:480px; margin-top:0.25em"/>
+  <img src="assets/kom__css.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
 </details>
 
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
-  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css style="width:480px; margin-top:0.25em"/>
+  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" width="480" style="margin-top:0.25em"/>
 
-  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" style="width:480px; margin-top:0.25em"/>
+  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" width="480" style="margin-top:0.25em;"/>
 </details>
 
 <details>
   <summary>Extension compatible - Auto Rename Tag <em>- click to unfold</em></summary>
-  <img src="assets/kom__art.gif" alt="Example Auto Rename Tag Extension" style="width:480px; margin-top:0.25em"/>
+  <img src="assets/kom__art.gif" alt="Example Auto Rename Tag Extension" width="480" style="margin-top:0.25em;"/>
 </details>
 
 ## How To Use
+
+<img src="assets/kom__show-commands.jpg" alt="GUI settings screenshot" width="480" style="margin-bottom:0.25em"/>
 
 |                | **Default Keymaps** | **Commands**           |
 | -------------- | ------------------- | ---------------------- |
@@ -37,10 +39,17 @@
 
 <sub>The default keybindings are inspired by VIM's _add_ `Ctrl-a` and _subtract_ `Ctrl-x`. Of course , you can remap them to your preference.</sub>
 
-## Keyword List
+## Settings
 
-Simple create custom keyword groups by adding a cycle group to your `settings.json`.<br>
-E.g., having one group added that should cycle between `foo` / `bar` / `baz` it would look like:
+Settings are accessible via the GUI settings and your `settings.json` file.<br>
+Choose whether you want to use the default keywords and add custom cycle groups.
+
+<img src="assets/kom__gui-settings.jpg" alt="GUI settings screenshot" style="width:600px; margin-top:0.25em"/>
+
+### Custom Keywords
+
+Simply create custom keyword cycle groups by adding them to your `settings.json`.<br>
+E.g., if one of the groups you want to add should cycle through `foo` / `bar` / `baz` it would look like:
 
 ```json
 "keyword-o-mat.customKeywords": [
@@ -107,8 +116,8 @@ E.g., having one group added that should cycle between `foo` / `bar` / `baz` it 
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<sub>\* Words that are linked or wrapped like _element-`one`_ or _"`foo`"_ and symbols like _`&&`_ require to be selected.<br>
-When a word is surrounded by spaces it is sufficient when the cursor is placed above it.</sub>
+<sub>\* Symbols like _`&&`_ or if a word that should be cycled is linked with a hyphen, e.g., _element-`one`_ required a visual selection<br>
+For words surrounded by spaces, parentheses or double quotes it is sufficient when the cursor is placed above them.</sub>
 
 ## Release Notes
 
@@ -124,7 +133,7 @@ When a word is surrounded by spaces it is sufficient when the cursor is placed a
 ## Outlook
 
 -  [x] User created keyword groups
--  [x] Options to disable default mappings
+-  [x] Option to disable default keywords
 -  [ ] Language(filetype) specific keyword maps
 -  [ ] Advanced user options
 
