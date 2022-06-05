@@ -11,21 +11,21 @@
 
 <details open>
   <summary>Cycle variables, booleans and commonly used keywords</summary>
-  <img src="assets/kom__bool.gif" alt="Example CSS" style="width:480px; margin-bottom:0.5em"/>
+  <img src="assets/kom__bool.gif" alt="Example CSS" style="width:480px; margin-top:0.25em"/>
 
-  <img src="assets/kom__css.gif" alt="Example CSS" style="width:480px; margin-bottom:0.5em"/>
+  <img src="assets/kom__css.gif" alt="Example CSS" style="width:480px; margin-top:0.25em"/>
 </details>
 
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
-  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" style="width:480px; margin-bottom:0.5em" />
+  <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css style="width:480px; margin-top:0.25em"/>
 
-  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" style="width:480px; margin-bottom:0.5em" />
+  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" style="width:480px; margin-top:0.25em"/>
 </details>
 
 <details>
   <summary>Extension compatible - Auto Rename Tag <em>- click to unfold</em></summary>
-  <img src="assets/kom__art.gif" alt="Example Auto Rename Tag Extension" style="width:480px; margin-bottom:0.5em"/>
+  <img src="assets/kom__art.gif" alt="Example Auto Rename Tag Extension" style="width:480px; margin-top:0.25em"/>
 </details>
 
 ## How To Use

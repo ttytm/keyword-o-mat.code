@@ -2,7 +2,11 @@ import * as vscode from "vscode";
 import { getKeywords } from "./utils";
 import type { Keyword } from "./utils";
 
-const keywords = getKeywords(vscode.workspace.getConfiguration("keyword-o-mat").get("defaultKeywords"));
+let keywords = getKeywords(vscode.workspace.getConfiguration("keyword-o-mat").get("defaultKeywords"));
+
+vscode.workspace.onDidChangeConfiguration(() => {
+	keywords = getKeywords(vscode.workspace.getConfiguration("keyword-o-mat").get("defaultKeywords"));
+});
 
 const cycleKeyword = (keywords: Keyword<Keyword<string>>) => {
 	const activeTextEditor = vscode.window.activeTextEditor;

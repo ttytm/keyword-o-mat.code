@@ -39,7 +39,6 @@ export const getKeywords = (defaultEnabled: boolean) => {
 	let adders = { user: createKeywordMap(getUserKeywords(false)) };
 	let substractors = { user: createKeywordMap(getUserKeywords(true)) };
 
-	// TODO: remove the need to reload window on setting change
 	if (defaultEnabled) {
 		Object.assign(adders, { global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")) });
 		Object.assign(substractors, { global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) });

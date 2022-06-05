@@ -3,7 +3,7 @@
 	"displayName": "Keyword-O-Mat",
 	"publisher": "Turiiya",
 	"description": "Easily cycle through commonly used keywords.",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.66.0"
@@ -35,7 +35,7 @@
 				"keyword-o-mat.defaultKeywords": {
 					"type": "boolean",
 					"default": true,
-					"description": "Enable or disable the default keyword list (reload required)."
+					"description": "Enable or disable the default keyword list."
 				},
 				"keyword-o-mat.customKeywords": {
 					"type": "array",
