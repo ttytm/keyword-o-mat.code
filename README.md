@@ -116,7 +116,7 @@ E.g., if one of the groups you want to add should cycle through `foo` / `bar` / 
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<sub>\* Symbols like _`&&`_ or if a word that should be cycled is linked with a hyphen, e.g., _element-`one`_ required a visual selection<br>
+<sub>\* Symbols like _`&&`_ or when word that should be cycled is separated with a hyphen, e.g., _element-`one`_ require a visual selection.<br>
 For words surrounded by spaces, parentheses or double quotes it is sufficient when the cursor is placed above them.</sub>
 
 ## Release Notes
