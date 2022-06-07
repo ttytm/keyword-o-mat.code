@@ -9,12 +9,11 @@
 
 ## Examples
 
-<details open>
-  <summary>Cycle variables, booleans and commonly used keywords</summary>
-  <img src="assets/kom__bool.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
+Cycle variables, booleans and commonly used keywords
+
+  <img src="assets/kom__bool.gif" alt="Example CSS" width="480" />
 
   <img src="assets/kom__css.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
-</details>
 
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
@@ -37,7 +36,8 @@
 | Cycle Forward  | <kbd>Alt+a</kbd>    | `K-O-M Cycle Forward`  |
 | Cycle Backward | <kbd>Alt+x</kbd>    | `K-O-M Cycle Backward` |
 
-<sub>The default keybindings are inspired by VIM's _add_ `Ctrl-a` and _subtract_ `Ctrl-x`. Of course , you can remap them to your preference.</sub>
+<sub>The default keybindings are inspired by VIM's _add_ <kbd>Ctrl-a</kbd> and _subtract_ <kbd>Ctrl-x</kbd>.<br>
+Of course , you can remap them to your preference.</sub>
 
 ## Settings
 
@@ -48,7 +48,7 @@ Choose whether you want to use the default keywords and add custom cycle groups.
 
 ### Custom Keywords
 
-Simply create custom keyword cycle groups by adding them to your `settings.json`.<br>
+Simply create a custom keyword cycle group by adding it as an array to your `settings.json`.<br>
 E.g., if one of the groups you want to add should cycle through `foo` / `bar` / `baz` it would look like:
 
 ```json
@@ -60,7 +60,7 @@ E.g., if one of the groups you want to add should cycle through `foo` / `bar` / 
 
 ### Default Keywords
 
-| _Rotate symbols and words that are in one row_                                     |
+| _Rotate symbols\* and words that are in one row_                                     |
 | ---------------------------------------------------------------------------------- |
 | `&&` , `\|\|`                                                                      |
 | `and` , `or`                                                                       |
@@ -116,15 +116,20 @@ E.g., if one of the groups you want to add should cycle through `foo` / `bar` / 
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<sub>\* Symbols like _`&&`_ or when word that should be cycled is separated with a hyphen, e.g., _element-`one`_ require a visual selection.<br>
-For words surrounded by spaces, parentheses or double quotes it is sufficient when the cursor is placed above them.</sub>
+<small>Sufficient to place the cursor above the cycle element when it is a:
+- Word surrounded by spaces, parentheses, or double quotes
+
+\* Visual selection is required when the cycle element is a: 
+- Word separated by a hyphen, e.g., _element-`one`_ 
+- Symbol like  _`&&`_
+</small>
 
 ## Release Notes
 
 ### 0.2.0
 
 -  Users can define custom keyword cycle groups in their `settings.json`
--  Add option to disable default settings
+-  Add option to disable default keywords
 
 ### 0.1.0
 
@@ -134,7 +139,7 @@ For words surrounded by spaces, parentheses or double quotes it is sufficient wh
 
 -  [x] User created keyword groups
 -  [x] Option to disable default keywords
--  [ ] Language(filetype) specific keyword maps
+-  [ ] Language(filetype) specific keywords
 -  [ ] Advanced user options
 
 ## Credits
@@ -144,3 +149,4 @@ Similar extensions and projects that served as an inspiration.
 -  [Toggle Boolean](https://github.com/silesky/vscode-toggle-bool)
 -  [Swap Keywords](https://github.com/L13/vscode-swap)
 -  [vim-cycle](https://github.com/zef/vim-cycle)
+
