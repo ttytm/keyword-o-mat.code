@@ -3,7 +3,7 @@
 	"displayName": "Keyword-O-Mat",
 	"publisher": "Turiiya",
 	"description": "Easily cycle through commonly used keywords.",
-	"version": "0.2.6",
+	"version": "0.2.7",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.66.0"
