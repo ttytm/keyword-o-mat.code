@@ -40,13 +40,13 @@ export const getKeywords = (defaultEnabled: boolean) => {
 	let substractors = { user: createKeywordMap(getUserKeywords(true)) };
 
 	if (defaultEnabled) {
-		Object.assign(adders, { global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")) });
-		Object.assign(substractors, { global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) });
+		adders = { ...adders, ...{ global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")) } };
+		substractors = { ...substractors, ...{ global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) } };
 	}
 
 	const keywords = {
 		adders: { ...adders },
-		substractors: { ...substractors }
+		substractors: { ...substractors },
 	};
 
 	return keywords;
