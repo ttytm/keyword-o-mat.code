@@ -2,8 +2,8 @@
 	"name": "keyword-o-mat",
 	"displayName": "Keyword-O-Mat",
 	"publisher": "Turiiya",
-	"description": "Easily cycle through commonly used keywords.",
-	"version": "0.2.7",
+	"description": "Quickly swap related keywords.",
+	"version": "0.2.8",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.66.0"
@@ -13,8 +13,8 @@
 	],
 	"keywords": [
 		"keyword",
-		"rotate",
-		"cycle",
+		"switch",
+		"swap",
 		"toggle",
 		"invert"
 	],

@@ -3,17 +3,17 @@
 <div align="center">
   <img src="assets/keyword-o-mat__logo.png" />
 
-> _"Amp up your workflows. Quickly rotate related keywords commonly used in a variety of popular coding languages."_
+> _"Amp up your workflows. Quickly swap related keywords."_
 
 </div>
 
 ## Examples
 
-Cycle variables, booleans and commonly used keywords
+Switch variables, booleans and commonly used keywords
 
-  <img src="assets/kom__bool.gif" alt="Example CSS" width="480" />
+<img src="assets/kom__bool.gif" alt="Example CSS" width="480" />
 
-  <img src="assets/kom__css.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
+<img src="assets/kom__css.gif" alt="Example CSS" width="480" style="margin-top:0.25em;"/>
 
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
@@ -60,7 +60,7 @@ E.g., if one of the groups you want to add should cycle through `foo` / `bar` / 
 
 ### Default Keywords
 
-| _Rotate symbols\* and words that are in one row_                                     |
+| _Rotate symbols\* and words that are in one row_                                   |
 | ---------------------------------------------------------------------------------- |
 | `&&` , `\|\|`                                                                      |
 | `and` , `or`                                                                       |
@@ -116,13 +116,16 @@ E.g., if one of the groups you want to add should cycle through `foo` / `bar` / 
 | `TODO` , `DOING` , `DONE` , `CANCELED`                                             |
 | `NOW` , `LATER`                                                                    |
 
-<small>Sufficient to place the cursor above the cycle element when it is a:
-- Word surrounded by spaces, parentheses, or double quotes
+<small>\* A visual selection is required when the cycle element is a:
 
-\* Visual selection is required when the cycle element is a: 
-- Word separated by a hyphen, e.g., _element-`one`_ 
-- Symbol like  _`&&`_
-</small>
+-  Word separated by a hyphen, e.g., _element-`one`_
+-  Symbol like _`&&`_
+
+It is sufficient to place the cursor above the cycle element when it is a:
+
+-  Word surrounded by spaces, parentheses, or double quotes
+
+ </small>
 
 ## Release Notes
 
@@ -149,4 +152,3 @@ Similar extensions and projects that served as an inspiration.
 -  [Toggle Boolean](https://github.com/silesky/vscode-toggle-bool)
 -  [Swap Keywords](https://github.com/L13/vscode-swap)
 -  [vim-cycle](https://github.com/zef/vim-cycle)
-

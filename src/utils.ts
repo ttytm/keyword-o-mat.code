@@ -14,10 +14,10 @@ const getUserKeywords = (reverse: boolean) => {
 	return lists;
 };
 
-// Load json files 
 const getDefaultKeywords = (reverse: boolean, ...pathnames: string[]) => {
 	let lists: string[][];
 
+	// Load json files 
 	pathnames.forEach((pathname) => {
 		lists = JSON.parse(readFileSync(join(__dirname, pathname), "utf-8"));
 		if (reverse) lists.map((row: Keyword) => row.reverse()).reverse();
@@ -26,7 +26,6 @@ const getDefaultKeywords = (reverse: boolean, ...pathnames: string[]) => {
 	return lists;
 };
 
-// Create keyword maps
 const createKeywordMap = (lists: string[][]) => {
 	const keywords = {};
 
@@ -37,16 +36,16 @@ const createKeywordMap = (lists: string[][]) => {
 
 export const getKeywords = (defaultEnabled: boolean) => {
 	let adders = { user: createKeywordMap(getUserKeywords(false)) };
-	let substractors = { user: createKeywordMap(getUserKeywords(true)) };
+	let subtractors = { user: createKeywordMap(getUserKeywords(true)) };
 
 	if (defaultEnabled) {
 		adders = { ...adders, ...{ global: createKeywordMap(getDefaultKeywords(false, "./keywords/global.json")) } };
-		substractors = { ...substractors, ...{ global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) } };
+		subtractors = { ...subtractors, ...{ global: createKeywordMap(getDefaultKeywords(true, "./keywords/global.json")) } };
 	}
 
 	const keywords = {
 		adders: { ...adders },
-		substractors: { ...substractors },
+		subtractors: { ...subtractors },
 	};
 
 	return keywords;

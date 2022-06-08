@@ -59,7 +59,7 @@ const sortSelections = (document: vscode.TextDocument, selections: vscode.Select
 };
 
 const cycleFwd = () => cycleKeyword(keywords.adders);
-const cycleBwd = () => cycleKeyword(keywords.substractors);
+const cycleBwd = () => cycleKeyword(keywords.subtractors);
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleForward", () => cycleFwd()));
