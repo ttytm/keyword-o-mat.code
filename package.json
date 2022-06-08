@@ -3,7 +3,7 @@
 	"displayName": "Keyword-O-Mat",
 	"publisher": "Turiiya",
 	"description": "Quickly swap related keywords.",
-	"version": "0.2.8",
+	"version": "0.2.9",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.66.0"
@@ -16,7 +16,9 @@
 		"switch",
 		"swap",
 		"toggle",
-		"invert"
+		"invert",
+		"rotate",
+		"cycle"
 	],
 	"repository": {
 		"type": "git",
