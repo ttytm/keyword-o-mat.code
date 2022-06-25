@@ -62,8 +62,10 @@ const cycleFwd = () => cycleKeyword(keywords.adders);
 const cycleBwd = () => cycleKeyword(keywords.subtractors);
 
 export function activate(context: vscode.ExtensionContext) {
-	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleForward", () => cycleFwd()));
-	context.subscriptions.push(vscode.commands.registerCommand("keyword-o-mat.cycleBackward", () => cycleBwd()));
+	context.subscriptions.push(
+		vscode.commands.registerCommand("keyword-o-mat.cycleForward", () => cycleFwd()),
+		vscode.commands.registerCommand("keyword-o-mat.cycleBackward", () => cycleBwd())
+	);
 }
 
 export function deactivate() { }
