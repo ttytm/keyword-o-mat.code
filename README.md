@@ -18,8 +18,6 @@ Switch variables, booleans and commonly used keywords
 <details>
   <summary>Multi cursor selection compatible <em>- click to unfold</em></summary>
   <img src="assets/kom__mc__css.gif" alt="Example Multi cursor selection css" width="480" style="margin-top:0.25em"/>
-
-  <img src="assets/kom__mc.gif" alt="Example Multi cursor selection css" width="480" style="margin-top:0.25em;"/>
 </details>
 
 <details>
@@ -28,8 +26,6 @@ Switch variables, booleans and commonly used keywords
 </details>
 
 ## How To Use
-
-<img src="assets/kom__show-commands.jpg" alt="GUI settings screenshot" width="480" style="margin-bottom:0.25em"/>
 
 |                | **Default Keymaps** | **Commands**           |
 | -------------- | ------------------- | ---------------------- |
@@ -44,12 +40,10 @@ Of course , you can remap them to your preference.</sub>
 Settings are accessible via the GUI settings and your `settings.json` file.<br>
 Choose whether you want to use the default keywords and add custom cycle groups.
 
-<img src="assets/kom__gui-settings.jpg" alt="GUI settings screenshot" style="width:600px; margin-top:0.25em"/>
-
 ### Custom Keywords
 
-Simply create a custom keyword cycle group by adding it as an array to your `settings.json`.<br>
-E.g., if one of the groups you want to add should cycle through `foo` / `bar` / `baz` it would look like:
+Simply create a custom keyword cycle group by adding it as an array of strings to your `settings.json`.<br>
+E.g., if one of the groups you want to add should cycle through `foo` / `bar` / `baz`, it would be implemented like shown below. To add another group just separate it with a comma.<br>
 
 ```json
 "keyword-o-mat.customKeywords": [
